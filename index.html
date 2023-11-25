@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowy Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .glow-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #4ec9bf;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(45, 208, 222, 0.8);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .glow-btn:hover {
+      box-shadow: 0 0 30px rgba(36, 207, 184, 0.8), 0 0 40px rgba(52, 152, 219, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#" class="glow-btn">Click me</a>
+
+</body>
+</html>

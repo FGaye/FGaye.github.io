@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glowy Button</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
 
-    .glow-btn {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:url('home.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 300px;
+            background: url('flower.jpg') center/cover no-repeat;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .glow-btn {
+            margin-top: 24px;
       display: inline-block;
       padding: 10px 20px;
       font-size: 16px;
       text-align: center;
       text-decoration: none;
       color: #fff;
-      background-color: #4ec9bf;
+      background-color: #0d0d0d;
+      background: url('button.jpg') center/cover no-repeat;
       border-radius: 5px;
-      box-shadow: 0 0 10px rgba(45, 208, 222, 0.8);
+      box-shadow: 0 0 10px rgba(18, 18, 18, 0.8);
       transition: box-shadow 0.3s ease-in-out;
     }
 
     .glow-btn:hover {
-      box-shadow: 0 0 30px rgba(36, 207, 184, 0.8), 0 0 40px rgba(52, 152, 219, 0.6);
+      box-shadow: 0 0 30px rgba(8, 8, 8, 0.8), 0 0 40px rgba(51, 52, 52, 0.6);
     }
-  </style>
+    </style>
 </head>
+
 <body>
 
-  <a href="#" class="glow-btn">Click me</a>
+    <div class="card">
+        <h2>Flowers</h2>
+        <p>One of nature's beauty</p>
 
+    </div>
+  <a href="#" class="glow-btn">Explore</a>
+     
 </body>
+
 </html>
